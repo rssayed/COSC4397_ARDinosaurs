@@ -58,5 +58,5 @@ Dinosaur_Continent:
 
 Fact:
 - (PK) FactId
-- FactDescription (VARCHAR NOT NULL)
+- FactDescription (VARCHAR(250) NOT NULL)
 - (FK) DinosaurId
