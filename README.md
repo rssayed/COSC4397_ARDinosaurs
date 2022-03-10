@@ -45,18 +45,18 @@ Facts:
 ## Database Schema:
 Dinosaur:
 - (PK) DinosaurId
-- DinosaurName (VARCHAR NOT NULL)
+- DinosaurName (VARCHAR(50) NOT NULL)
 
 Continent:
 - (PK) ContinentId
-- ContinentName (VARCHAR NOT NULL)
+- ContinentName (VARCHAR(50) NOT NULL)
 
 Dinosaur_Continent:
 - (PK) Dinosaur_ContinentId
 - (FK) DinosaurId
 - (FK) ContinentId
 
-Facts:
+Fact:
 - (PK) FactId
 - FactDescription (VARCHAR NOT NULL)
 - (FK) DinosaurId
