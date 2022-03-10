@@ -41,3 +41,22 @@ Facts:
 - Bones were hollow, which enabled the reptile to be light enough to fly.
 - First animal, after insects, to evolve and gain powered flight.
 - On land, this creature walked on all fours (legs and wings).
+
+## Database Schema:
+Dinosaur:
+- (PK) DinosaurId
+- DinosaurName (VARCHAR NOT NULL)
+
+Continent:
+- (PK) ContinentId
+- ContinentName (VARCHAR NOT NULL)
+
+Dinosaur_Continent:
+- (PK) Dinosaur_ContinentId
+- (FK) DinosaurId
+- (FK) ContinentId
+
+Facts:
+- (PK) FactId
+- FactDescription (VARCHAR NOT NULL)
+- (FK) DinosaurId
