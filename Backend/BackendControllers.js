@@ -15,20 +15,21 @@ const DatabaseConnection = async () => {
 
 var client = await DatabaseConnection();
 
-/* *** GET REQUESTS *** */
-app.get('/GetUserInDatabase', async (req, res) => {
-    try {
-        const parameters = req.query;
-        const result = await client.query(`SELECT * FROM Dinosaur`);
-    
-        res.send(true);
-    } catch(e) {
-        res.send(false);
-    }
-});
-
 /* *** Server Startup *** */
 const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server has started on Port ${PORT}.`)
+});
+
+/* *** GET REQUESTS *** */
+app.get('/GetDinosaurs', async (req, res) => {
+    try {
+        const parameters = req.query;
+        const result = await client.query(`SELECT * FROM Dinosaur`);
+        console.log(result);
+
+        res.send(true);
+    } catch(e) {
+        res.send(false);
+    }
 });
