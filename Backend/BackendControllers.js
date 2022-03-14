@@ -33,7 +33,6 @@ app.get('/GetContinentInformation', async (req, res) => {
         JOIN Fact as F ON D.dinosaurid = F.dinosaurid
         WHERE C.continentid = ${1}`);
 
-        console.log(result.rows);
         res.send(result.rows);
     } catch(e) {
         res.send(e);
