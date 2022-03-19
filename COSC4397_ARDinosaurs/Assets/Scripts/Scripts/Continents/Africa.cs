@@ -22,5 +22,9 @@ public class Africa : MonoBehaviour
     private void OnMouseDown()
     {
         IPromise<Dictionary<string, List<string>>> promise = DatabaseController.GetContinentInformation(continentId);
+        promise.Then(response =>
+        {
+            Debug.Log("Information: " + JsonConvert.SerializeObject(response));
+        });
     }
 }

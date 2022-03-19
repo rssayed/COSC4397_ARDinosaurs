@@ -10,7 +10,7 @@ public class NorthAmerica : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("On Start: ");
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class NorthAmerica : MonoBehaviour
         IPromise<Dictionary<string, List<string>>> promise = DatabaseController.GetContinentInformation(continentId);
         promise.Then(response =>
         {
-
+            Debug.Log("Information: " + JsonConvert.SerializeObject(response));
         });
     }
 }
