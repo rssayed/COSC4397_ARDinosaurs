@@ -4,22 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using RSG;
 
-public class DatabaseConnection : MonoBehaviour
+public class DatabaseController
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        GetContinentInformation();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    private Dictionary<string, List<string>> CreateDinosaurInformation(List<DinosaurDTO> continentInformation)
+    public static Dictionary<string, List<string>> CreateDinosaurInformation(List<DinosaurDTO> continentInformation)
     {
         Dictionary<string, List<string>> dinosaursInformation = new Dictionary<string, List<string>>() { };
 
@@ -38,13 +27,13 @@ public class DatabaseConnection : MonoBehaviour
         return dinosaursInformation;
     }
 
-    private void GetContinentInformation()
+    public static IPromise<Dictionary<string, List<string>>> GetContinentInformation(int continentId)
     {
-        RestClient.Get("http://localhost:5000/GetContinentInformation").Then(response => {
-            List<DinosaurDTO> continentInformation = Newtonsoft.Json.JsonConvert.DeserializeObject<List<DinosaurDTO>>(response.Text);
-            
+        return RestClient.Get($"http://localhost:5000/GetContinentInformation/{continentId}").Then(response => {
+            List<DinosaurDTO> continentInformation = JsonConvert.DeserializeObject<List<DinosaurDTO>>(response.Text);
             Dictionary<string, List<string>> dinosaursInformation = CreateDinosaurInformation(continentInformation);
-            Debug.Log(String.Format("Continent: {0}", JsonConvert.SerializeObject(dinosaursInformation)));
+
+            return dinosaursInformation;
         });
     }
 }

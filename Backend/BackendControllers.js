@@ -22,16 +22,17 @@ app.listen(PORT, () => {
 });
 
 /* *** GET REQUESTS *** */
-app.get('/GetContinentInformation', async (req, res) => {
+app.get('/GetContinentInformation/:continentId', async (req, res) => {
     try {
-        const parameters = req.query;
+        const continentId = req.params.continentId;
+
         const result = await client.query(`
         SELECT D.dinosaurname, F.factdescription as dinosaurfact
         FROM Continent as C
         JOIN Dinosaur_Continent as DC ON C.continentid = DC.continentid
         JOIN Dinosaur as D ON DC.dinosaurid = D.dinosaurId
         JOIN Fact as F ON D.dinosaurid = F.dinosaurid
-        WHERE C.continentid = ${1}`);
+        WHERE C.continentid = ${continentId}`);
 
         res.send(result.rows);
     } catch(e) {
