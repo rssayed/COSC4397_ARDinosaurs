@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 326891958}
   - component: {fileID: 326891957}
   - component: {fileID: 326891956}
+  - component: {fileID: 326891959}
   m_Layer: 0
   m_Name: Asia
   m_TagString: Untagged
@@ -221,6 +222,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326891954}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &326891959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326891954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7591557cf39defc46b590829051540b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &427727824
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +246,7 @@ GameObject:
   - component: {fileID: 427727828}
   - component: {fileID: 427727827}
   - component: {fileID: 427727826}
+  - component: {fileID: 427727829}
   m_Layer: 0
   m_Name: North America (2)
   m_TagString: Untagged
@@ -319,6 +333,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427727824}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &427727829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427727824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dfda9eb91546b4e8b4515bb2c7262a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +451,7 @@ GameObject:
   - component: {fileID: 820795086}
   - component: {fileID: 820795085}
   - component: {fileID: 820795084}
+  - component: {fileID: 820795087}
   m_Layer: 0
   m_Name: Australia and Antartica (2)
   m_TagString: Untagged
@@ -511,6 +538,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820795082}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &820795087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820795082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6375c6855c89a0d409fc2f591f853ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +628,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 1.0177, y: 1.0177, z: 1.0177}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -607,6 +646,7 @@ GameObject:
   - component: {fileID: 1063400792}
   - component: {fileID: 1063400791}
   - component: {fileID: 1063400790}
+  - component: {fileID: 1063400793}
   m_Layer: 0
   m_Name: North America
   m_TagString: Untagged
@@ -693,6 +733,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063400788}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1063400793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063400788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dfda9eb91546b4e8b4515bb2c7262a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098104144
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +757,7 @@ GameObject:
   - component: {fileID: 1098104148}
   - component: {fileID: 1098104147}
   - component: {fileID: 1098104146}
+  - component: {fileID: 1098104149}
   m_Layer: 0
   m_Name: Africa
   m_TagString: Untagged
@@ -791,6 +844,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098104144}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1098104149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098104144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200e4866412b8304ba085ffa1dfb054d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1189091062
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +966,7 @@ GameObject:
   - component: {fileID: 1270531799}
   - component: {fileID: 1270531798}
   - component: {fileID: 1270531797}
+  - component: {fileID: 1270531800}
   m_Layer: 0
   m_Name: Australia and Antartica
   m_TagString: Untagged
@@ -987,6 +1053,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270531795}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1270531800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270531795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6375c6855c89a0d409fc2f591f853ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1671929165
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,6 +1077,7 @@ GameObject:
   - component: {fileID: 1671929169}
   - component: {fileID: 1671929168}
   - component: {fileID: 1671929167}
+  - component: {fileID: 1671929170}
   m_Layer: 0
   m_Name: South America
   m_TagString: Untagged
@@ -1085,6 +1164,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671929165}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1671929170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671929165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e21942a1bb67c4fa8e65e3818d80f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1793144518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1227,7 @@ GameObject:
   - component: {fileID: 2125877274}
   - component: {fileID: 2125877273}
   - component: {fileID: 2125877272}
+  - component: {fileID: 2125877275}
   m_Layer: 0
   m_Name: Europe
   m_TagString: Untagged
@@ -1222,3 +1314,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125877270}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2125877275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125877270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a26e330c597af4ea67d97e62c7a10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
