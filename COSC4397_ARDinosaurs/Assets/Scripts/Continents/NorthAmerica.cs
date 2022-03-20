@@ -11,6 +11,7 @@ public class NorthAmerica : MonoBehaviour
     void Start()
     {
         Debug.Log("On Start: ");
+        this.gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class NorthAmerica : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("North America clicked");
         IPromise<Dictionary<string, List<string>>> promise = DatabaseController.GetContinentInformation(continentId);
         promise.Then(response =>
         {
