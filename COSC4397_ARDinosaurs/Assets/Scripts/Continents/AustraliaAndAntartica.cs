@@ -10,7 +10,7 @@ public class AustraliaAndAntartica : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -21,6 +21,7 @@ public class AustraliaAndAntartica : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("Aussie/Antarctica clicked");
         IPromise<Dictionary<string, List<string>>> promise = DatabaseController.GetContinentInformation(continentId);
         promise.Then(response =>
         {
