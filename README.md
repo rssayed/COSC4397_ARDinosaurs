@@ -1,6 +1,6 @@
 # COSC4397_ARDinosaurs
 Group Members:
-- Shaheer Khan,
+- Shaheer Khan
 - Reeba Sayed
 - Hoang Phan
 - Victor Rodriguez
