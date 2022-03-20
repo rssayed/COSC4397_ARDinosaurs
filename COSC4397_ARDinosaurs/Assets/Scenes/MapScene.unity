@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21337819, g: 0.21519852, b: 0.21768281, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,117 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7591557cf39defc46b590829051540b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &427727824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 427727825}
-  - component: {fileID: 427727828}
-  - component: {fileID: 427727827}
-  - component: {fileID: 427727826}
-  - component: {fileID: 427727829}
-  m_Layer: 0
-  m_Name: North America (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &427727825
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427727824}
-  m_LocalRotation: {x: 0.6959521, y: 0.12510277, z: -0.12510276, w: 0.6959521}
-  m_LocalPosition: {x: 0.317, y: 0, z: -0.169}
-  m_LocalScale: {x: 0.10315998, y: 0.042379983, z: 0.011970001}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1793144519}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -20.381}
---- !u!136 &427727826
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427727824}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &427727827
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427727824}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &427727828
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427727824}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &427727829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427727824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0dfda9eb91546b4e8b4515bb2c7262a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +342,7 @@ GameObject:
   - component: {fileID: 820795084}
   - component: {fileID: 820795087}
   m_Layer: 0
-  m_Name: Australia and Antartica (2)
+  m_Name: Antarctica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,7 +361,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1793144519}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -17.017}
 --- !u!136 &820795084
 CapsuleCollider:
@@ -661,14 +550,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063400788}
-  m_LocalRotation: {x: 0.69082046, y: 0.1508874, z: -0.15088734, w: 0.69082063}
-  m_LocalPosition: {x: 0.141, y: 0, z: -0.198}
-  m_LocalScale: {x: 0.18634017, y: 0.22605468, z: 0.017300922}
+  m_LocalRotation: {x: 0.7059215, y: 0.040924042, z: -0.040923968, w: 0.70592165}
+  m_LocalPosition: {x: 0.198, y: 0, z: -0.168}
+  m_LocalScale: {x: 0.30446187, y: 0.45613322, z: 0.017300922}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1793144519}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -24.642}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -6.636}
 --- !u!136 &1063400790
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -732,7 +621,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063400788}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1063400793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,7 +858,7 @@ GameObject:
   - component: {fileID: 1270531797}
   - component: {fileID: 1270531800}
   m_Layer: 0
-  m_Name: Australia and Antartica
+  m_Name: Australia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1211,7 +1100,6 @@ Transform:
   - {fileID: 326891955}
   - {fileID: 1098104145}
   - {fileID: 1270531796}
-  - {fileID: 427727825}
   - {fileID: 820795083}
   m_Father: {fileID: 1189091066}
   m_RootOrder: 0
