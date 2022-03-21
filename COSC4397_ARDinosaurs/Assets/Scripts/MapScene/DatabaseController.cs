@@ -1,10 +1,12 @@
-using Proyecto26;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using Newtonsoft.Json;
+using Proyecto26;
 using RSG;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class DinosaurDTO
@@ -33,13 +35,21 @@ public class DatabaseController
         return dinosaursInformation;
     }
 
-    public static IPromise<Dictionary<string, List<string>>> GetContinentInformation(int continentId)
+    public static void GetContinentInformation(int continentId)
     {
-        return RestClient.Get($"http://localhost:5000/GetContinentInformation/{continentId}").Then(response => {
+        RestClient.Get($"http://localhost:5000/GetContinentInformation/{continentId}").Then(response => {
             List<DinosaurDTO> continentInformation = JsonConvert.DeserializeObject<List<DinosaurDTO>>(response.Text);
             Dictionary<string, List<string>> dinosaursInformation = CreateDinosaurInformation(continentInformation);
 
-            return dinosaursInformation;
+            Debug.Log("Second");
+
+            DinosaurInformation.dinosaurName = dinosaursInformation.ElementAt(0).Key;
+            DinosaurInformation.firstFact = dinosaursInformation.ElementAt(0).Value[0];
+            DinosaurInformation.secondFact = dinosaursInformation.ElementAt(0).Value[1];
+            DinosaurInformation.thirdFact = dinosaursInformation.ElementAt(0).Value[2];
+
+            Debug.Log("Second");
+            SceneManager.LoadScene(sceneBuildIndex: 2);
         });
     }
 }
