@@ -10,7 +10,6 @@ public class NorthAmerica : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("On Start: ");
         this.gameObject.GetComponent<Renderer>().enabled = false;
     }
 
@@ -22,11 +21,6 @@ public class NorthAmerica : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("North America clicked");
-        IPromise<Dictionary<string, List<string>>> promise = DatabaseController.GetContinentInformation(continentId);
-        promise.Then(response =>
-        {
-            Debug.Log("Information: " + JsonConvert.SerializeObject(response));
-        });
+        DatabaseController.GetContinentInformation(continentId);
     }
 }

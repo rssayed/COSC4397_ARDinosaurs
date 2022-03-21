@@ -21,11 +21,6 @@ public class Europe : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Europe clicked");
-        IPromise<Dictionary<string, List<string>>> promise = DatabaseController.GetContinentInformation(continentId);
-        promise.Then(response =>
-        {
-            Debug.Log("Information: " + JsonConvert.SerializeObject(response));
-        });
+        DatabaseController.GetContinentInformation(continentId);
     }
 }
