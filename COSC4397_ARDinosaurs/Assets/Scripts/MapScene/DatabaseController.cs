@@ -6,6 +6,12 @@ using UnityEngine;
 using Newtonsoft.Json;
 using RSG;
 
+[Serializable]
+public class DinosaurDTO
+{
+    public string dinosaurname { get; set; }
+    public string dinosaurfact { get; set; }
+}
 public class DatabaseController
 {
     public static Dictionary<string, List<string>> CreateDinosaurInformation(List<DinosaurDTO> continentInformation)
