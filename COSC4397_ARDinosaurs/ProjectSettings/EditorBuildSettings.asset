@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DinosaurARScene.unity
     guid: 470e115f5b6cee841b9c6c4162d2d551
+  - enabled: 1
+    path: Assets/Scenes/InstructionsScene.unity
+    guid: d7d8d49cbf4595044a54bd91023615d8
   m_configObjects: {}
