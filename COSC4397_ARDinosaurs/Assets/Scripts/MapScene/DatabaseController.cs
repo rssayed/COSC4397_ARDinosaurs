@@ -43,7 +43,10 @@ public class DatabaseController
 
             Debug.Log("Second");
 
-            DinosaurInformation.dinosaurName = dinosaursInformation.ElementAt(0).Key;
+            DinosaurInformation.firstDinosaurName = dinosaursInformation.ElementAt(0).Key;
+            DinosaurInformation.secondDinosaurName = dinosaursInformation.ElementAt(1).Key;
+            DinosaurInformation.thirdDinosaurName = dinosaursInformation.ElementAt(2).Key;
+
             DinosaurInformation.firstFact = dinosaursInformation.ElementAt(0).Value[0];
             DinosaurInformation.secondFact = dinosaursInformation.ElementAt(0).Value[1];
             DinosaurInformation.thirdFact = dinosaursInformation.ElementAt(0).Value[2];
