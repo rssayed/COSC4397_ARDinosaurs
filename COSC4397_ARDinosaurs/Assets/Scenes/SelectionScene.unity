@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 417599343}
   - component: {fileID: 417599348}
   - component: {fileID: 417599349}
+  - component: {fileID: 417599350}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -491,6 +492,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisButton: {fileID: 1514810399}
   sceneInteger: 4
+--- !u!114 &417599350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417599342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80baa1a6324dd740aaf854d023319d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstIncorrectButton: {fileID: 790653155}
+  secondIncorrectButton: {fileID: 1660525604}
 --- !u!1 &766435014
 GameObject:
   m_ObjectHideFlags: 0
