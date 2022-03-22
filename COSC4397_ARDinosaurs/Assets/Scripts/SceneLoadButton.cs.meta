@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:COSC4397_ARDinosaurs/Assets/Scripts/SceneLoadButton.cs.meta
 guid: 96b236803c64778418a10122a57546b5
+========
+guid: 55ca4c831d9fd7a42a14858bf7be51cc
+>>>>>>>> 9465a0b63ec880a8f1b87c76cc95c13823e226e2:COSC4397_ARDinosaurs/Assets/Scripts/SceneLoader.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
