@@ -13,7 +13,7 @@ const DatabaseConnection = async () => {
     return client;
 }
 
-var client = await DatabaseConnection();
+var client = DatabaseConnection();
 
 /* *** Server Startup *** */
 const PORT = 5000;
