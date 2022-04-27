@@ -10,6 +10,7 @@ const DatabaseConnection = async () => {
     const client = new pg.Client(connectionString);
     await client.connect();
 
+    console.log('Connected to DB');
     return client;
 }
 
