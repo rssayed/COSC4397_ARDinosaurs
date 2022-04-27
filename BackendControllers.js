@@ -16,9 +16,8 @@ const DatabaseConnection = async () => {
 var client = DatabaseConnection();
 
 /* *** Server Startup *** */
-const PORT = 5000;
-app.listen(PORT, () => {
-    console.log(`Server has started on Port ${PORT}.`)
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`Server has started.`)
 });
 
 /* *** GET REQUESTS *** */
