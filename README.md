@@ -2,8 +2,6 @@
 Group Members:
 - Shaheer Khan
 - Reeba Sayed
-- Hoang Phan
-- Victor Rodriguez
 
 ## Dinosaurs by Continents and Facts:
 North America: Triceratops
